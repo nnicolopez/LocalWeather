@@ -1,0 +1,27 @@
+body {
+    background-color: #232229;
+    color: #6d6d6f;
+}
+h1 {
+    font-size: 80px;
+}
+h3 {
+    font-size: 50px;
+}
+.myWeatherWindow {
+    font-size: 30px;
+    /*margin-top: 100px;*/
+}
+.myWeatherWindow div {
+    height: 80px;
+}
+
+.myWeatherWindow p {
+    display: inline-block;
+}
+.myWeather img {
+    height: 70px;
+}
+.myUnit {
+    display: none;
+}

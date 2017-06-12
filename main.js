@@ -12,10 +12,16 @@ function showWeather(pos) {
     var crd = pos.coords;
     getWeather(crd.latitude, crd.longitude);
 }
+
+/**
+ * getting weather statistics from openweather
+ * this way works without secure conection localy
+ *
+ */
 function getWeather(lat, lon) {
     $.ajaxSetup({ cache: false });
     console.log(lat, lon);
-    $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon +
+    $.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon +
               '&units=metric' +
               '&id=524901&APPID=ec85692ed20a36b5820591de985da267', renderWeather);
 }
@@ -63,9 +69,11 @@ function renderWeather(obj) {
     * */
 }
 
-function toggleTempUnit() {
+/**
+ *
+ *
+ */
 
-}
 
 $(document).ready(function() {
 
